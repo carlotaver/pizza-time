@@ -4,12 +4,14 @@
 2. Clona tu versión del proyecto
 3. Entra en la carpeta del proyecto
 4. Instala dependencias
+5. Copiad el `.env` de `oferta-del-dia`
 5. Ejecuta el script `start` o el `dev`
 
 ```
 ❯ git clone git@github.com:<USUARIO>/pizza-time.git
 ❯ cd pizza-time
 ❯ npm install
+❯ cp ../oferta-del-dia/.env ./ 
 ❯ npm start
 ```
 
