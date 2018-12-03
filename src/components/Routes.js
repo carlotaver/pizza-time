@@ -8,7 +8,7 @@ const Routes = () => (
   <Router>
     <StorePicker path="/" />
     <App path="/store/:storeId" />
-    {/* TODO: Hook up the new Pizza component to render @ "/secret-dinner" */}
+    {/* TODO: Hook up the new <Pizza> component to render @ "/secret-dinner" */}
     {/* HINT: You need to write code 👇 and also 👆 */}
     <NotFound default />
   </Router>
