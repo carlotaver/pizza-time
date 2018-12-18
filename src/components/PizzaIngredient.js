@@ -1,3 +1,4 @@
+import React from "react";
 /* TODO: Create the PizzaIngredient Component consisting of:
   - An `li` with
     class `{this.props.ingredient.selected ? "marked" : ""}`
@@ -9,3 +10,4 @@
       Show the value of the current ingredient `cash` property.
       (HINT: 👆 Check out `src/helpers.js` to import the `formatPrice` function)
 */
+export default PizzaIngredient;
