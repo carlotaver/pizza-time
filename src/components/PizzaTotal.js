@@ -13,13 +13,13 @@ class PizzaTotal extends React.Component {
       <div className="score">
         <span className="label">Total</span>
         <span className="value">
-          {this.total(this.props.ingredients)}
           {formatPrice(this.total(this.props.ingredients))}
         </span>
       </div>
     );
   }
 }
+export default PizzaTotal;
 
 /* TODO: Create the PizzaTotal Component consisting of:
   - A `div` with a class `score`
@@ -35,4 +35,3 @@ class PizzaTotal extends React.Component {
         2. map `cash` property
         3. reduce all that money with `reduce(<reducer function>, 0)`
 */
-export default PizzaTotal;

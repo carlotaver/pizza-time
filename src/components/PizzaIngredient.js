@@ -6,7 +6,6 @@ class PizzaIngredient extends React.Component {
     this.props.ingredientSelector(this.props.ingredientKey);
   };
   render() {
-    return <h1>Ingredients</h1>;
     return (
       <li
         className={this.props.ingredient.selected ? "marked" : ""}
@@ -20,6 +19,8 @@ class PizzaIngredient extends React.Component {
     );
   }
 }
+export default PizzaIngredient;
+
 /* TODO: Create the PizzaIngredient Component consisting of:
   - An `li` with
     class `{this.props.ingredient.selected ? "marked" : ""}`
@@ -31,4 +32,3 @@ class PizzaIngredient extends React.Component {
       Show the value of the current ingredient `cash` property.
       (HINT: 👆 Check out `src/helpers.js` to import the `formatPrice` function)
 */
-export default PizzaIngredient;

@@ -5,10 +5,8 @@ class PizzaHeader extends React.Component {
     return (
       <header>
         <h1 className="pizza-text">
-          <span role="pizza" aria-label="">
-            <span role="img" aria-label="">
-              🍕
-            </span>
+          <span role="img" aria-labelledby="">
+            🍕
           </span>
           It`s Pizza Time!
         </h1>
@@ -16,10 +14,10 @@ class PizzaHeader extends React.Component {
     );
   }
 }
+export default PizzaHeader;
 
 /* TODO: Create the PizzaHeader Component consisting of:
   - A `header`
     - An `h1` with class `pizza-text`
       Show the text `🍕 It's Pizza Time!`
 */
-export default PizzaHeader;
