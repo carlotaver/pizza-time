@@ -55,6 +55,7 @@ class Pizza extends React.Component {
     );
   }
 }
+export default Pizza;
 
 /* TODO: Create the Pizza Component consisting of:
   - A `div` with a class `content`
