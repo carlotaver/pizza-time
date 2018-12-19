@@ -5,11 +5,11 @@ class PizzaIngredients extends React.Component {
   render() {
     return (
       <ul>
-        {Object.keys(this.props.ingredients).map(ingredientsKey => (
+        {Object.keys(this.props.ingredients).map(ingredientKey => (
           <PizzaIngredient
-            key={ingredientsKey}
-            ingredient={this.props.ingredients[ingredientsKey]}
-            ingredientKey={ingredientsKey}
+            key={ingredientKey}
+            ingredient={this.props.ingredients[ingredientKey]}
+            ingredientKey={ingredientKey}
             ingredientSelector={this.props.ingredientSelector}
           />
         ))}
@@ -18,7 +18,6 @@ class PizzaIngredients extends React.Component {
   }
 }
 export default PizzaIngredients;
-
 /* TODO: Create the PizzaIngredients Component consisting of:
   - An `ul` where you `map` over `ingredients` to create a `PizzaIngredient` per `ingredientKey`
 */

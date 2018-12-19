@@ -5,6 +5,7 @@ class PizzaIngredient extends React.Component {
   handleClick = _event => {
     this.props.ingredientSelector(this.props.ingredientKey);
   };
+
   render() {
     return (
       <li
@@ -19,7 +20,6 @@ class PizzaIngredient extends React.Component {
     );
   }
 }
-export default PizzaIngredient;
 
 /* TODO: Create the PizzaIngredient Component consisting of:
   - An `li` with
@@ -32,3 +32,5 @@ export default PizzaIngredient;
       Show the value of the current ingredient `cash` property.
       (HINT: 👆 Check out `src/helpers.js` to import the `formatPrice` function)
 */
+
+export default PizzaIngredient;
