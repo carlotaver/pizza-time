@@ -8,11 +8,18 @@ class PizzaIngredients extends React.Component {
       <ul>
         {object.keys(this.props.ingredients).map(ingredienKey => (
           <PizzaIngredient ingredienKey={PizzaIngredient} />
+          <PizzaIngredient
+            key={ingredienKey}
+            ingredient={this.props.ingredients[ingredienKey]}
+            ingredienKey={ingredienKey}
+            ingredientSelector={this.props.ingredientSelector}
+           />
         ))}
       </ul>
     );
   }
 }
+export default PizzaIngredients;
 /* TODO: Create the PizzaIngredients Component consisting of:
   - An `ul` where you `map` over `ingredients` to create a `PizzaIngredient` per `ingredientKey`
 */
